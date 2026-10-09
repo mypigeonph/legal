@@ -16,7 +16,8 @@ Please read this Terms of Service and Disclaimer Agreement ("Agreement") careful
 ## 1. ACCEPTANCE OF TERMS, ACCOUNT REGISTRATION & SINGLE EMAIL POLICY
 * **"AS-IS" & "AS-AVAILABLE" Provision:** The Application is provided on an "AS IS" and "AS AVAILABLE" basis without warranties of any kind, either express or implied, including but not limited to implied warranties of merchantability, fitness for a particular purpose, or non-infringement.
 * **Scope of Service:** **My Pigeon PH** is designed as a digital administrative, high-capacity record-keeping, genetic lineage, and loft management platform built primarily to empower pigeon breeders, fanciers, and racing enthusiasts in the **Philippines**, while also welcoming and accommodating international fanciers and racing communities worldwide.
-* **Cloud Account Registration & Single Email Policy:** To access the Application, basic account details (**Email Address, Display Name, User ID [UID], and Device ID**) are recorded in our secure cloud database (Google Firebase Firestore) alongside your legal consent state. To maintain account integrity and device license verification, each application installation is restricted to a **single registered email address**.
+* **Cloud Account Registration & Stored Profile Data:** To access the Application, user profile details—including **Email Address, Display Name, Loft Name, User ID (UID), Device ID, Account Status/Role (`role`, `is_active`, `is_email_verified`), and Legal Consent Logs/Timestamps (`tos_version`, `privacy_policy_version`, `dpa_consent_version`, `created_at`, `last_login_at`)**—are recorded in our secure cloud database (Google Firebase Firestore).
+* **Single Email Policy:** To maintain account integrity and device license verification, each application installation is restricted to a **single registered email address**.
 * **Account Switching & Deletion Requirement:** If you decide to switch to a different email address, you must first initiate a full account deletion for the currently registered email. You acknowledge that executing an account deletion permanently purges all local loft records, pigeon profiles, and financial logs from your device, and you are solely responsible for exporting local backups (`.mypigeon` files) prior to switching accounts.
 
 ## 2. SYSTEM REQUIREMENTS, DISPLAY ORIENTATION & ACCESS SECURITY
@@ -79,13 +80,13 @@ By creating an account, clicking "I Agree", installing, or continuing to use **M
 ### 1. INFORMATION WE COLLECT AND PROCESS
 We handle three distinct categories of data: **Cloud Account Details**, **Local Loft Records**, and **Device Security Credentials**.
 
-#### A. Cloud Account Details (Stored Online)
-When you create an account, log in, or accept our legal terms, we collect and store the following basic account details in our secure cloud database (Google Firebase Firestore):
-* **Display Name**
-* **Email Address** (Restricted to a single active email per installation)
-* **User ID (UID)**
-* **Device ID** (used to verify your device license)
-* **Legal Consent Logs** (timestamps verifying your acceptance of our Terms of Service, Privacy Policy, and RA 10173 notice)
+#### A. Cloud Account Details (Stored Online in Google Firebase Firestore)
+When you register, log in, or accept our legal terms, we collect and process the following specific user fields in our cloud database:
+* **User Profile & Identity Details:** Display Name (`display_name`), Registered Email (`email`), Loft Name (`loft_name`), User ID (`uid`), and Account Role (`role`).
+* **License & Device Verification:** Device Hardware ID (`device_id`) used to verify device license validity.
+* **Account State & Email Verification:** Email Verification Flag (`is_email_verified` / `emailVerified`) and Account Active Status (`is_active`).
+* **Legal Consent Logs & Compliance Tracking:** Consent flags and version numbers for Terms of Service (`tos_accepted`, `tos_version`), Privacy Policy (`privacy_policy_accepted`, `privacy_policy_version`), and Data Privacy Act compliance (`dpa_consent_given`, `dpa_consent_version`).
+* **System Audit Timestamps:** Registration Timestamp (`created_at`), Account Update Timestamp (`updated_at`), Last Login Timestamp (`last_login_at`), Consent Grant Timestamps (`tos_accepted_at`, `privacy_policy_accepted_at`, `dpa_consent_given_at`), and Deletion Timestamps (`deleted_at`).
 
 #### B. Local Loft Records (Stored Only on Your Phone)
 **My Pigeon PH** is designed as an **offline-first application** equipped to manage databases of 1,000+ pigeon entries locally. All your day-to-day loft features and data are processed and stored exclusively on your device's internal database (Room/SQLite):
@@ -106,7 +107,7 @@ When you create an account, log in, or accept our legal terms, we collect and st
 ### 2. HOW YOUR DATA IS STORED AND ENCRYPTED
 * **On-Device Storage:** Your loft information is saved inside an isolated, secure database sandbox on your phone.
 * **Encrypted Backups:** When you export a Full Virtual Loft Local Backup (`.mypigeon` file) to your phone's storage, the file is fully encrypted using password-protected **AES-256 GCM encryption**. Without your chosen password, no unauthorized person or app can read your backup file.
-* **Cloud Security:** Your basic account details (Email, Display Name, UID, Device ID, and consent timestamps) are safely stored in Google Firestore with strict database security rules.
+* **Cloud Security:** Your basic account details (Email, Display Name, Loft Name, UID, Device ID, account states, and consent timestamps) are safely stored in Google Firestore with strict database security rules.
 
 ### 3. DATA SHARING
 We **do not sell, rent, trade, or share** your account details, device information, or loft records with third-party advertisers, data brokers, or marketing networks. Cloud infrastructure services (Google Firebase) are used strictly for user authentication, license validation, and legal recordkeeping.
