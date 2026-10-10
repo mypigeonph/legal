@@ -126,17 +126,22 @@ Under RA 10173, you have the following rights:
 4. **Right to Erasure or Blocking:** You have the right to wipe your local device records or delete your cloud account profile.
 5. **Right to Lodge a Complaint:** You may raise questions or file a complaint with the **National Privacy Commission (NPC)** of the Philippines if you believe your data privacy rights have been violated.
 
-### 6. APP PERMISSIONS REQUESTED
+### 6. INTERNATIONAL USERS & CROSS-BORDER DATA PRIVACY
+While **My Pigeon PH** is operated out of the Philippines in compliance with RA 10173, we welcome international fanciers worldwide:
+* **Offline-First Data Minimization:** Because all loft records, pedigree files, financial ledgers, and photos remain exclusively on your local device storage, no foreign loft management data is transferred across international borders or stored on cloud servers.
+* **Global Privacy Standards (GDPR / CCPA / Regional Laws):** We adhere to international privacy-by-design principles. Cloud processing is strictly limited to essential account verification (Google Firebase Firestore). Foreign users retain full rights to access, port, or erase their cloud profile and local data at any time via in-app settings.
+
+### 7. APP PERMISSIONS REQUESTED
 The app requests minimal Android system permissions:
 * **INTERNET / ACCESS_NETWORK_STATE:** Required strictly to authenticate your account login, verify your device license, and save legal consent logs to Firestore.
 * **SCHEDULE_EXACT_ALARM / POST_NOTIFICATIONS:** Required to sound exact daily feeding alarms, egg hatching reminders, and custom audio alerts on your device.
 * **USE_BIOMETRIC / USE_FINGERPRINT:** Required strictly to invoke system-level `BiometricPrompt` authentication if enabled by the user.
 
-### 7. UPDATES TO THIS PRIVACY POLICY
+### 8. UPDATES TO THIS PRIVACY POLICY
 We may update this Privacy Policy from time to time to reflect app improvements, new features, or regulatory updates. Any changes will be posted with an updated "Last Updated" date.
 
-### 8. CONTACT US & DATA PROTECTION OFFICER
-If you have any questions, feedback, or requests regarding this Privacy Policy or wish to exercise your privacy rights under RA 10173, please contact us:
+### 9. CONTACT US & DATA PROTECTION OFFICER
+If you have any questions, feedback, or requests regarding this Privacy Policy or wish to exercise your privacy rights under RA 10173 or global standards, please contact us:
 
 * **App Name:** My Pigeon PH
 * **Developer Support Email:** `mypigeonph@gmail.com`
