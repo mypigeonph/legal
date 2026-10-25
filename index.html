@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Pigeon PH - Legal & Compliance Documents</title>
+  <title>My Pigeon PH - Legal & Compliance Hub</title>
   <style>
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
@@ -27,6 +27,9 @@
     a { color: #0366d6; text-decoration: none; }
     a:hover { text-decoration: underline; }
     code { background: #f3f4f6; padding: 2px 6px; border-radius: 4px; font-size: 0.9em; }
+    ul, ol { padding-left: 20px; }
+    li { margin-bottom: 8px; }
+    hr { border: 0; height: 1px; background: #eaecef; margin: 24px 0; }
     .footer {
       margin-top: 40px;
       padding-top: 20px;
@@ -39,32 +42,75 @@
 </head>
 <body>
   <div class="container">
-    <h1>My Pigeon PH - Legal & Compliance Documents</h1>
+    <h1>My Pigeon PH - Legal & Compliance Hub</h1>
     <p><strong>Official Website & Legal Hub:</strong> <a href="https://mypigeonph.github.io/legal/">https://mypigeonph.github.io/legal/</a><br>
     <strong>Developer & Organization:</strong> NGage Curiosity Lab<br>
     <strong>Support Email:</strong> <code>mypigeonph@gmail.com</code></p>
 
     <hr>
 
-    <h2>TERMS OF SERVICE AND DISCLAIMER AGREEMENT</h2>
+    <h2 id="terms-of-service">TERMS OF SERVICE AND DISCLAIMER AGREEMENT</h2>
     <p><em>Last Updated: October 25, 2026</em></p>
     <p>Please read this Terms of Service and Disclaimer Agreement ("Agreement") carefully before using <strong>My Pigeon PH</strong> ("Application" or "Service"). By creating an account, logging in, accepting our legal terms, or using the Application, you ("User" or "You") agree to be bound by this Agreement.</p>
 
     <h3>1. ACCEPTANCE OF TERMS, INTENDED AUDIENCE & SINGLE EMAIL POLICY</h3>
     <ul>
-      <li><strong>"AS-IS" & "AS-AVAILABLE" Provision:</strong> The Application is provided on an "AS IS" and "AS AVAILABLE" basis without warranties of any kind, either express or implied, including but not limited to implied warranties of merchantability, fitness for a particular purpose, or non-infringement.</li>
-      <li><strong>Scope of Service & Target Audience:</strong> My Pigeon PH is designed as a digital administrative, high-capacity record-keeping, genetic lineage, and loft management platform built primarily to empower pigeon breeders, fanciers, and racing enthusiasts in the Philippines, while also welcoming and accommodating international fanciers and racing communities worldwide. The Application is strictly an administrative and analytical utility and is not an online gambling, wagering, or betting platform.</li>
-      <li><strong>Age Restriction & Eligibility:</strong> You must be at least 13 years of age to download, access, register, or use My Pigeon PH. By accessing or using the Application, you represent and warrant that you meet this minimum age requirement. If you are under 18 years of age, you represent that you have reviewed this Agreement with your parent or legal guardian and obtained their permission to use the Application.</li>
-      <li><strong>Single Email Policy & Device Lock:</strong> Each user account is strictly bound to a single registered email address per device to preserve data integrity and prevent system abuse. Registering multiple accounts on a single device or switching between multiple email addresses without prior account deletion is strictly prohibited.</li>
+      <li><strong>"AS-IS" & "AS-AVAILABLE" Provision:</strong> The Application is provided on an "AS IS" and "AS AVAILABLE" basis without warranties of any kind.</li>
+      <li><strong>Scope of Service & Target Audience:</strong> My Pigeon PH is designed as a digital administrative, high-capacity record-keeping, genetic lineage, and loft management platform built primarily for pigeon breeders, fanciers, and racing enthusiasts in the Philippines and worldwide. The Application is strictly an administrative utility and is not an online gambling or betting platform.</li>
+      <li><strong>Age Restriction & Eligibility:</strong> You must be at least 13 years of age to download, access, register, or use My Pigeon PH. Minors under 18 must review this Agreement with a parent or legal guardian.</li>
+      <li><strong>Single Email Policy & Device Lock:</strong> Each user account is strictly bound to a single registered email address per device to preserve data integrity and prevent system abuse. Registering multiple accounts on a single device or switching email addresses without prior account deletion is strictly prohibited.</li>
     </ul>
 
-    <h3>2. PROPRIETARY RIGHTS & COPYRIGHT NOTICE</h3>
+    <h3>2. SYSTEM REQUIREMENTS, DISPLAY ORIENTATION & ACCESS SECURITY</h3>
+    <ul>
+      <li><strong>Smartphone & Portrait Mode Restriction:</strong> The Application is designed and optimized strictly for mobile smartphones in Portrait Mode to preserve complex pedigree layouts and digital cards. Landscape orientation is disabled.</li>
+      <li><strong>Tablet Disclaimer:</strong> The app is not optimized for tablets or foldables. Visual scaling cannot be guaranteed on unverified aspect ratios.</li>
+      <li><strong>Device Security & Biometrics:</strong> Users are solely responsible for physical device security, PIN codes, and OS biometric settings (<code>BiometricPrompt</code>). The developer is not liable for unauthorized access resulting from shared or compromised device usage.</li>
+    </ul>
+
+    <h3>3. SMART APP LOGIC, CONTEXT SHORTCUTS & AUTOMATED WORKFLOWS</h3>
+    <ul>
+      <li><strong>Context Menu Shortcuts:</strong> Long-pressing pigeon tiles triggers immediate context shortcuts (Edit, Health Log, OLR Enrollment, Pedigree, Delete) operating on local Room databases.</li>
+      <li><strong>Automated Sales & Ledger Credits:</strong> Updating a bird's status to "Sold" automatically logs a sales credit into the Loft Financial Tracker with optional buyer details.</li>
+    </ul>
+
+    <h3>4. PEDIGREE, GENETIC COI & MISREPRESENTATION DISCLAIMER</h3>
+    <p>All pedigree records, ring entries, QR codes, and Coefficient of Inbreeding (COI) reports are user-generated. The developer does not verify or certify genetic accuracy or ownership for third-party commercial transactions or race derbies.</p>
+
+    <h3>5. VETERINARY & HEALTH DISCLAIMER</h3>
+    <p>Health modules, vaccination trackers, and egg incubation alarms are administrative tools and do not substitute for licensed veterinary advice. Users assume all risk regarding treatments or foster transfers.</p>
+
+    <h3>6. DATA PORTABILITY & AES-256 BACKUPS</h3>
+    <p>All pigeon records stay strictly local on device storage. Users are responsible for exporting encrypted <code>.mypigeonph</code> backups. The developer cannot recover lost files or forgotten passwords.</p>
+
+    <hr>
+
+    <h2 id="privacy-policy">PRIVACY POLICY & RA 10173 COMPLIANCE</h2>
+    <p><em>Republic Act No. 10173 (Philippine Data Privacy Act of 2012) & International Standards</em></p>
+
+    <h3>1. INFORMATION WE COLLECT AND PROCESS</h3>
+    <ul>
+      <li><strong>Cloud Details (Firestore):</strong> <code>display_name</code>, <code>email</code>, <code>loft_name</code>, <code>uid</code>, <code>device_id</code> (license verification), <code>is_active</code>, <code>is_email_verified</code>, <code>role</code>, and legal consent logs/timestamps.</li>
+      <li><strong>Local Records (100% On-Device):</strong> Bird profiles, 6-generation pedigrees, photos, hatching trackers, foster records, financial ledgers, health logs, and alarm settings.</li>
+    </ul>
+
+    <h3>2. LOCAL BIOMETRIC & PIN SECURITY</h3>
+    <p>Biometric authentication (fingerprint/face unlock) is executed entirely by Android's hardware <code>BiometricPrompt</code>. My Pigeon PH <strong>never</strong> collects, transmits, or stores biometric data or facial templates.</p>
+
+    <h3>3. ACCOUNT DELETION & ERASURE POLICY</h3>
+    <p>Executing an account deletion permanently purges cloud records from Google Firestore and executes an immediate, non-recoverable local database wipe on your smartphone.</p>
+
+    <h3>4. INTERNATIONAL USERS & CROSS-BORDER DATA PRIVACY</h3>
+    <p>While operated out of the Philippines, our offline-first architecture complies with global privacy standards (including GDPR and CCPA) by keeping all sensitive loft entries exclusively on local user hardware.</p>
+
+    <hr>
+
+    <h2>PROPRIETARY RIGHTS & COPYRIGHT NOTICE</h2>
     <p>© 2026 NGage Curiosity Lab. All Rights Reserved.</p>
-    <p><strong>Proprietary Protection & Ownership Statement:</strong></p>
     <ol>
-      <li><strong>Application & Content Ownership:</strong> All visual designs, user interfaces, original logos, brand assets, source code, database architecture, legal documentation, calculations (including COI genetic rules and 6-generation pedigree generators), and feature names within <strong>My Pigeon PH</strong> are the exclusive intellectual property of <strong>NGage Curiosity Lab</strong>.</li>
-      <li><strong>Prohibition of Unauthorized Copying:</strong> No part of this Application, website, graphic design, layout, or legal compliance documentation may be copied, reproduced, reverse-engineered, decompiled, mirrored, redistributed, translated, or transmitted in any form or by any means without the express prior written consent of <strong>NGage Curiosity Lab</strong>.</li>
-      <li><strong>Trademark Protection:</strong> "My Pigeon PH", "My Pigeon PH Clocking System", and "NGage Curiosity Lab" are proprietary brand names and trademarks. Unauthorized commercial or non-commercial use of these titles, logos, or brand identity is strictly prohibited under Philippine intellectual property laws and international copyright treaties.</li>
+      <li><strong>Application & Content Ownership:</strong> All visual designs, user interfaces, original logos, brand assets, source code, database architecture, legal documentation, calculations, and feature names within <strong>My Pigeon PH</strong> are the exclusive intellectual property of <strong>NGage Curiosity Lab</strong>.</li>
+      <li><strong>Prohibition of Unauthorized Copying:</strong> No part of this Application, website, graphic design, layout, or legal compliance documentation may be copied, reproduced, reverse-engineered, decompiled, mirrored, redistributed, translated, or transmitted without express prior written consent.</li>
+      <li><strong>Trademark Protection:</strong> "My Pigeon PH", "My Pigeon PH Clocking System", and "NGage Curiosity Lab" are proprietary brand names and trademarks.</li>
     </ol>
 
     <div class="footer">
