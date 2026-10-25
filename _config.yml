@@ -1,2 +1,10 @@
-show_downloads: false
+title: My Pigeon PH - Legal & Compliance
+description: Official legal documentation for My Pigeon PH by NGage Curiosity Lab.
+theme: jekyll-theme-primer
+
+# Disable repository edit links and open-source branding
+edit_on_github: false
 gh_edit_link: false
+gh_edit_repository: ""
+gh_edit_view_mode: ""
+show_downloads: false
